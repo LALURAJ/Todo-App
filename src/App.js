@@ -4,11 +4,7 @@ import TaskItem from './components/task-item/TaskItem';
 import TaskForm from './components/task-form/TaskForm';
 function App() {
  
-  const [taskList,setTaskList] = useState([{
-    title:"A todo",
-    description:"The description sample",
-    isCompleted:false
-  }]);
+  const [taskList,setTaskList] = useState([]);
 
   return (
       <div className="App">
