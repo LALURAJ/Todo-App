@@ -18,7 +18,7 @@ export default function TaskItem({task,taskList,taskListHandler}){
     }
     
     const taskDeleteHandler = (event)=>{
-       const filteredTasks =  taskList.filter((t)=>t.title!=task.title && t.description!=task.description);
+       const filteredTasks =  taskList.filter((t)=>t.title!==task.title && t.description!==task.description);
        taskListHandler(filteredTasks);
     }
     return(
